@@ -1,0 +1,357 @@
+/* External CSS style file */
+
+
+* {
+   box-sizing: border-box;
+ }
+ 
+ 
+ body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ 
+ 
+ /* Header (div) formatting */
+ header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+ 
+ 
+header h1 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: 700;
+}
+ 
+ 
+ 
+ 
+ /* Make the logo have a rounded edge */
+ img.top-image {
+   vertical-align: middle;
+ }
+ 
+ 
+ /* CSS Layout from W3Schools: https://www.w3schools.com/css/css_templates.asp */
+ /* Style the top navigation bar */
+ .topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+ /* Style the topnav links */
+ .topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+ /* Change color on hover */
+ .topnav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.button:hover {
+color: #f1f1f1;
+background-color: #333;
+
+}
+ .dropdownCountry {
+  float: right;
+  position: absolute;
+  left: 150px;
+  top: 250px;
+  padding: 15px;
+ 
+ 
+ }
+ .textAmt {
+  float: right;
+  position: absolute;
+  top: 300;
+  left: 160;
+
+ }
+ .buttonRank {
+   padding: 10px;
+   float: right;
+   position: absolute;
+   top: 400px;
+   left: 160px;
+ 
+ 
+ }
+ .buttonSubmitCountry {
+  padding: 10px;
+  float: right;
+  position: absolute;
+  top: 300px;
+  left: 160px;
+
+ }
+ .buttonSubmitYears {
+  padding: 10px;
+  float: right;
+  position: absolute;
+  top: 650px;
+  left: 160px;
+
+ }
+ .table {
+  width: 100%;
+ }
+ .table tr, td, th{
+  border-collapse: collapse;
+  border-bottom: 1px solid #ddd;
+  border-spacing: 50px;
+  padding: 8px;
+  
+ }
+ .table tr:nth-child(even) {
+  background-color: #D6EEEE;
+
+ }
+ 
+ .table tr:hover {
+  background-color: #D6EEEE;
+ }
+ .howtouse {
+  position: absolute;
+  left: 1450;
+  top: 500;
+  text-align: center;
+  float: right;
+  width: 300;
+  height: 500;
+
+ }
+ .SimilarAmount {
+  float: right;
+  position: absolute;
+  left: 160px;
+  top: 330px;
+ }
+ .SelectRegion {
+  float: right;
+  position: absolute;
+  left: 160px;
+  top: 280px;
+ }
+ .SimilarbySelect {
+  float: right;
+  position: absolute;
+  left: 160px;
+  top: 400px;
+ }
+ .buttonAvg {
+  padding: 10px;
+  float: right;
+  position: absolute;
+  top: 250px;
+  left: 810px;
+
+
+}
+.whatshappening {
+  position: absolute;
+  text-align: left;
+  top: 360px;
+  left: 500px; 
+
+}
+.buttonMax {
+  padding: 10px;
+  float: right;
+  position: absolute;
+  top: 250px;
+  left: 1025px;
+
+
+}
+.buttonMin {
+  padding: 10px;
+  float: right;
+  position: absolute;
+  top: 250px;
+  left: 1175px;
+
+
+}
+.dropdownSortBy {
+  float: right;
+  position: absolute;
+  left: 875px;
+  top: 250px;
+  padding: 15px;
+ 
+ 
+ }
+ .buttonsubmit {
+  position: absolute;
+  left: 1000px;
+  top: 300px;
+  padding: 15px;
+ }
+ .buttonsubmit3 {
+  position: absolute;
+  left: 700px;
+  top: 325px;
+  padding: 15px;
+ }
+ .dropdownState {
+  float: right;
+  position: absolute;
+  left: 425px;
+  top: 250px;
+  padding: 15px;
+ 
+ 
+ }
+ .dropdownCity {
+  float: right;
+  position: absolute;
+  left: 650px;
+  top: 250px;
+  padding: 15px;
+ 
+ 
+ }
+ .dropdownSorts {
+  float: right;
+  position: absolute;
+  left: 700px;
+  top: 250px;
+  padding: 15px;
+ 
+ 
+ }
+ .tempRange {
+  float: right;
+  position: absolute;
+  left: 820px;
+  top: 230px;
+  padding: 15px;
+ 
+ 
+ }
+ .dropdownSortsL {
+  float: right;
+  position: absolute;
+  left: 700px;
+  top: 230px;
+  padding: 15px;
+ 
+ 
+ }
+ .dateselect1title {
+  left: 50px;
+  top: 50px;
+ 
+ 
+ }
+ .dateselectStart {
+  float: right;
+  position: absolute;
+  left: 1100px;
+  top: 260px;
+ }
+ .dateselectStart3 {
+  float: right;
+  position: absolute;
+  left: 350px;
+  top: 280px;
+ }
+ .dateselectEnd3 {
+  float: right;
+  position: absolute;
+  left: 550px;
+  top: 280px;
+ }
+ .dateselectEnd {
+  float: right;
+  position: absolute;
+  left: 1250px;
+  top: 260px;
+ }
+ .buttonSimilarTemp {
+  padding: 10px;
+  float: right;
+  position: absolute;
+  top: 325px;
+  left: 460px;
+
+
+}
+.buttonSimilarPop {
+  padding: 10px;
+  float: right;
+  position: absolute;
+  top: 325px;
+  left: 750px;
+
+
+}
+.buttonSimilarBoth {
+  padding: 10px;
+  float: right;
+  position: absolute;
+  top: 750px;
+  left: 160px;
+
+
+}
+ .tableM {
+  background-color: white;
+  position: absolute;
+  height: 500px;
+  width: 1000px;
+  top: 400px;
+  left: 350px;
+  overflow: scroll;
+  text-align: left;
+ }
+ .header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+ }
+
+ /* Style the content */
+ .content {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 50px 0;
+  height: 100%;
+  width: 100%;
+
+}
+.persona1 {
+  background-color: white;
+  position: absolute;
+  text-align:justify;
+  height: 60%;
+  top: 275px;
+  left: 200px;
+  padding: 20px;
+  width: 80%;
+  overflow:auto;
+}
+
+ /* Style the footer */
+ .footer {
+   background-color: #cccccc;
+   padding: 10px;
+ }
+ 
+ 
+ 
+ 

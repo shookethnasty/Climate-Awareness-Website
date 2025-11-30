@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Population and Temperature Changes</title>
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+</head>
+<body>
+    <header>
+        <h1>Population and Temperature Changes</h1>
+    </header>
+
+    <section class='options'>
+        <div class='input-group'>
+            <label for='view-select'>View by:</label>
+            <select id='view-select'>
+                <option value='countries'>Countries</option>
+                <option value='world'>World</option>
+            </select>
+        </div>
+
+        <div class='input-group'>
+            <label for='start-year-input'>Start Year:</label>
+            <input type='text' id='start-year-input'>
+        </div>
+
+        <div class='input-group'>
+            <label for='end-year-input'>End Year:</label>
+            <input type='text' id='end-year-input'>
+        </div>
+
+        <button id='submit-button'>Submit</button>
+    </section>
+
+    <section id='results'>
+        <!-- Population and temperature change results will be displayed here -->
+    </section>
+
+    <script src='script.js'></script>
+</body>
+</html>

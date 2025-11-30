@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Filters</title>
+</head>
+<body>
+  <h1>Data Filters</h1>
+  <form action="backend-script.php" method="POST">
+    <label for="startingYears">Starting Years:</label><br>
+    <select name="startingYears[]" id="startingYears" multiple>
+      <option value="2000">2000</option>
+      <option value="2001">2001</option>
+      <option value="2002">2002</option>
+      <!-- Add more options for the starting years -->
+    </select><br><br>
+    
+    <label for="regions">Regions:</label><br>
+    <select name="regions[]" id="regions" multiple>
+      <option value="country">Country</option>
+      <option value="state">State</option>
+      <option value="city">City</option>
+      <!-- Add more options for the regions -->
+    </select><br><br>
+    
+    <label for="populationRange">Population Range:</label><br>
+    <input type="number" name="minPopulation" id="minPopulation" placeholder="Minimum Population"><br>
+    <input type="number" name="maxPopulation" id="maxPopulation" placeholder="Maximum Population"><br><br>
+    
+    <label for="tempChange">Average Temperature Change:</label><br>
+    <input type="number" name="minTempChange" id="minTempChange" placeholder="Minimum Temp Change"><br>
+    <input type="number" name="maxTempChange" id="maxTempChange" placeholder="Maximum Temp Change"><br><br>
+    
+    <label for="timePeriod">Time Period:</label><br>
+    <input type="number" name="startYear" id="startYear" placeholder="Start Year"><br>
+    <input type="number" name="numOfYears" id="numOfYears" placeholder="Number of Years"><br><br>
+    
+    <input type="submit" value="Apply Filters">
+  </form>
+</body>
+</html>
