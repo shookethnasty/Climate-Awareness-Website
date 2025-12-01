@@ -5,35 +5,37 @@ import io.javalin.core.util.RouteOverviewPlugin;
 
 public class App {
 
-    // default port for local development
-    public static final int         DEFAULT_PORT    = 7001;
-    public static final String      CSS_DIR         = "css/";
-    public static final String      IMAGES_DIR      = "images/";
+    // Default port for local development
+    public static final int DEFAULT_PORT = 7001;
+    public static final String CSS_DIR = "css/";
+    public static final String IMAGES_DIR = "images/";
 
     public static void main(String[] args) {
 
-        // Use PORT from environment if present (e.g. on Render), otherwise 7001 locally
+        // Use PORT from environment (Render) or fallback to local default
         String portEnv = System.getenv("PORT");
         int port = (portEnv != null) ? Integer.parseInt(portEnv) : DEFAULT_PORT;
 
-        // Create our HTTP server and listen on the chosen port
+        // Start Javalin server
         Javalin app = Javalin.create(config -> {
             config.registerPlugin(new RouteOverviewPlugin("/help/routes"));
 
-            // Uncomment this if you have files in the CSS Directory
+            // Static files
             config.addStaticFiles(CSS_DIR);
-
-            // Uncomment this if you have files in the Images Directory
             config.addStaticFiles(IMAGES_DIR);
         }).start(port);
 
-        // Configure Web Routes
+        // Configure routes
         configureRoutes(app);
     }
 
 
     public static void configureRoutes(Javalin app) {
-        // All webpages are listed here as GET pages
+
+        // Health check (important for Render)
+        app.get("/healthz", ctx -> ctx.result("OK"));
+
+        // GET Pages
         app.get(PageIndex.URL, new PageIndex());
         app.get(PageMission.URL, new PageMission());
         app.get(PageST2A.URL, new PageST2A());
@@ -41,13 +43,10 @@ public class App {
         app.get(PageST3A.URL, new PageST3A());
         app.get(PageST3B.URL, new PageST3B());
 
-        // Add / uncomment POST commands for any pages that need web form POSTS
-        // app.post(PageIndex.URL, new PageIndex());
-        // app.post(PageMission.URL, new PageMission());
+        // POST Pages
         app.post(PageST2A.URL, new PageST2A());
         app.post(PageST2B.URL, new PageST2B());
         app.post(PageST3A.URL, new PageST3A());
         app.post(PageST3B.URL, new PageST3B());
     }
-
 }
